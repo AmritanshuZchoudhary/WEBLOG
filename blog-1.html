@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>We Blog</title>
+    <link rel="icon" type="image/jpg" href="iconweb.jpg">
+</head>
+
+<body>
+    <nav class="navigation">
+
+        <div class="nav-left">
+            <span><a href="home-page.html"><img src="iconweb.jpg" alt=""></a></span>
+            <a href="home-page.html"><button class="btn-topmost">Home</button></a><a href="about.html"><button
+                    class="btn-topmost">About</button></a><a href="contact.html"><button
+                    class="btn-topmost">Contact</button></a>
+
+
+        </div>
+
+
+
+        <div class="nav-right">
+            <form action="/search.html" method="get">
+                <input class="form-input" type="text" name="query" placeholder="Article search">
+                <button class="btn">Search</button>
+            </form>
+        </div>
+
+    </nav>
+
+
+    <hr>
+    <div class="blog">
+        <div class="blog-header1">
+           
+
+        </div>
+        <div class="blog-content">
+            <h1> What Being a Data Scientist at a Startup Really Looks Like</h1>
+            <br>
+            <p>
+
+                I. Domain-specific vs. Goal-oriented
+                Startups move fast — they need to adjust strategies based on the market feedback and iterate constantly
+                to ensure product-market fit. Data Scientists, as an expensive resource, need to shift their focus area
+                accordingly to create the largest business value.
+
+                Taking my own experience as an example:
+
+                When I first joined Brex, the priority was to onboard as many customers as we could while controlling
+                for fraud risk. Therefore, I worked closely with the Onboarding team to optimize the account application
+                flow and improve resource allocation for the Operations team.
+                As our customer base grew, the next priority was to scale our customer support (CX) function to provide
+                the best-in-class support. I partnered with the CX team to analyze customer pain points and reduce
+                product frictions. (Read my article for more details on DS in CX.)
+                Later, I collaborated with the Implementation team to accelerate ramp-up for new customers and with the
+                product team to identify churn drivers and improve retention.
+                As you can see, startups are very goal-oriented. At large firms, you might specialize in one product
+                feature for years; At a startup, the company’s needs can completely change within a quarter, and data
+                scientists change their domains more frequently as a result.
+
+                The upside is that this allows the data scientists to explore and collaborate with more functions and
+                have a more holistic view of the business. I worked with nearly every team at Brex in the past five
+                years — watching how GTM (go-to-market) found prospects and closed deals, seeing how Product and
+                Customer Support worked together to address customer pain points, and learning how the Customer Success
+                team reduced churn and drove upsell. This is a far more effective way to understand business operations
+                than reading books or taking courses at a business school. It also ensures the data scientists have
+                clear and high-impact business questions to solve.
+
+                But what’s the challenge? Data scientists need to follow the company’s strategy and adapt to changes
+                constantly. This means shifting priorities accordingly, and sometimes having to build things the fastest
+                way, instead of the most scalable or reliable way. Tech debt piles up quickly with tons of one-off
+                dashboards and multiple versions of the same metric, confusing stakeholders and the data team itself.
+                Establishing the best practices takes time, so living with the chaos sometimes is unavoidable — though
+                being able to set up the standards from 0 to 1 (or seeing others doing so) is also a rewarding part of
+                working at a startup, especially for aspiring data science leaders.
+
+                II. Data Analyst vs. Data Engineer vs. Data Scientist? All the Above.
+                Job titles in data these days are confusing — Some Data Scientists focus on experimentation, while some
+                are deep in machine learning; Some Data Analysts simply build dashboards, but some primarily do product
+                analytics. But when it comes to startups, titles matter less — you will likely do everything.
+
+                When I joined Brex, everyone had the same title, “Data Scientist”, but we all had to wear multiple hats.
+                We split the data team into DS, DA, and DE functions only since early last year. As I mentioned above,
+                startups are goal-oriented. Therefore, when there are limited people and no clear team structure, you
+                will need to do everything to achieve the goal.
+
+                Data Engineering: I learned data modeling, Airflow, ETL processes, SQL optimization, and many other data
+                engineering skills in the past five years. I remember one of my first projects at Brex was to migrate
+                our data pipelines from dbt to an internal tool. Yes, as a data scientist at a startup, there is a high
+                chance you also need to build, own, and maintain your own data pipelines.
+                Analytics: Joining a startup means there are many business areas with no or minimal data support.
+                Therefore, to help the team better understand their performance and gain their trust, the very first
+                step (after you have built the data pipelines) is to define the success metrics and build the
+                dashboards. Once the metrics are closely monitored, questions like why they moved or how to move them
+                come next naturally. These are all common analytics tasks.
+                Data Science: There are also plenty of advanced data science use cases at startups. Machine learning
+                models are helpful to detect fraud, predict churn, estimate LTV (lifetime value), etc. Causal inference
+                is also critical to evaluate the impact of a marketing campaign or a product launch.
+                Is it a good or bad thing to wear multiple hats?
+
+                If you are not yet sure about which type of data track you are most interested in, joining a startup
+                will help you to get some flavor of everything and decide which route to go next. Or if you would like
+                to become a Head of Data or even build your own company someday, this full-cycle exposure is super
+                valuable.
+
+                Meanwhile, the downside is also very clear — you will spend time on things you are not interested in, or
+                not that relevant to your long-term career goal. The fact that you own the whole data lifecycle can also
+                confuse stakeholders, as they usually only care about a certain type of output, for example, dashboards
+                or models, but do not realize you need to spend another 50% of time on data pipelining.
+
+                III. Higher visibility
+                Data scientists at startups never lack visibility. From day one at Brex, I got to work directly with the
+                C-suite. Leadership will often come to you with urgent and important business questions, hoping you can
+                do some data magic to uncover insights and drive business growth. This is not something you usually get
+                to experience at an established company, especially as a junior data scientist. It is a high-pressure
+                but highly rewarding environment.
+
+                For example, during the Silicon Valley Bank Crisis in March 2023, many startups were impacted, facing
+                the risk of losing their operational funds. I worked very closely with the leadership team to help
+                startups survive this hard time. I created a real-time tracker on new customer applications, analyzed
+                application review velocity to estimate additional workforce needs, and collaborated with other DS to
+                automate and speed up onboarding checks. It was an intense weekend, working cross-functionally in a war
+                room (virtually on Zoom) from 8 am to midnight. However, this is one of my best memories at Brex,
+                showing the true customer obsession from our leadership, and how data scientists can contribute directly
+                and drive huge business impact.</p>
+            <br>
+
+            <div class="author">
+                <img src="peo1.webp" alt="">
+                <div class="author-social">
+                    <a href="https://www.facebook.com/">
+                        <div class="author-social-img"><img src="fb.webp" alt=""></div>
+                    </a>
+                    <a href="https://www.instagram.com/"></a>
+                    <div class="author-social-img"><img src="ig.webp" alt=""></div></a>
+                    <a href="https://x.com/?lang=en-in">
+                        <div class="author-social-img"><img src="twit.webp" alt=""></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="footer">
+        <p>Copyright & copy; We Blog.com</p>
+
+    </div>
+</body>
+
+</html>
